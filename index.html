@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload de Arquivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="button">Upload de Arquivo</h1>
+
+  <form id="upload-form" enctype="multipart/form-data">
+    <label for="file-upload" class="button">Escolher Arquivo</label>
+    <input id="file-upload" type="file" name="file">
+    <button type="submit" class="button">Upload</button>
+  </form>
+
+  <p id="response-message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
