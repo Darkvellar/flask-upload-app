@@ -1,0 +1,142 @@
+/* Configuração geral do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+  margin: 0;
+}
+
+/* Estilização do título */
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: linear-gradient(to bottom, #217346, #1a5a2c);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+/* Barra de pesquisa centralizada */
+.search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #217346;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background: linear-gradient(to bottom, #217346, #1a5a2c);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background: #1a5a2c;
+}
+
+/* Mensagem de resposta posicionada no centro e oculta por padrão */
+#response-message {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: #217346;
+  text-align: center;
+  width: 320px;
+  opacity: 0;  /* Invisível por padrão */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Posicionamento dos botões de upload abaixo da mensagem */
+.upload-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botões estilizados */
+.button {
+  display: inline-block;
+  border: none;
+  background: linear-gradient(to bottom, #217346, #1a5a2c);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1a5a2c;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+  color: #ddd;
+}
+
+.button:active {
+  background: #14431f;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Esconde o input file padrão */
+input[type="file"] {
+  display: none;
+}
+
+/* Estiliza o label do input file */
+.label-file {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #444;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.label-file:hover {
+  background: #333;
+}
+
